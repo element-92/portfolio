@@ -1,0 +1,22 @@
+import type { ReactNode } from "react";
+import { cn } from "@/utils/cn";
+
+interface GlassCardProps {
+  children: ReactNode;
+  className?: string;
+  as?: "div" | "article";
+}
+
+export function GlassCard({ children, className, as = "div" }: GlassCardProps) {
+  const Comp = as;
+  return (
+    <Comp
+      className={cn(
+        "glass glow-border rounded-2xl p-6 backdrop-blur-lg sm:p-8",
+        className,
+      )}
+    >
+      {children}
+    </Comp>
+  );
+}
