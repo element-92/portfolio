@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://element-92.github.io/harshal-portfolio/sitemap.xml
+Sitemap: https://element-92.github.io/portfolio/sitemap.xml

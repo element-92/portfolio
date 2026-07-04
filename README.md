@@ -2,7 +2,7 @@
 
 Personal portfolio site for Harshal Sharma, an Offensive Security Professional (ASM, VAPT, OSINT, Web/API/Mobile/Cloud/AI-LLM Penetration Testing).
 
-Live: https://element-92.github.io/harshal-portfolio/
+Live: https://element-92.github.io/portfolio/
 
 ## Stack
 
