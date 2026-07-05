@@ -12,7 +12,8 @@ export function GlassCard({ children, className, as = "div" }: GlassCardProps) {
   return (
     <Comp
       className={cn(
-        "glass glow-border rounded-2xl p-6 backdrop-blur-lg sm:p-8",
+        "glass glow-border rounded-2xl p-6 backdrop-blur-lg transition-transform duration-300 ease-out sm:p-8",
+        "motion-safe:hover:-translate-y-1.5",
         className,
       )}
     >

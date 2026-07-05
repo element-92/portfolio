@@ -1,7 +1,6 @@
 import type {
   CaseStudy,
   CredentialEntry,
-  EducationEntry,
   ExperienceEntry,
   SkillGroup,
   StatEntry,
@@ -10,7 +9,7 @@ import type {
 export const profile = {
   name: "Harshal Sharma",
   headline: "Offensive Security Professional",
-  tagline: "ASM · VAPT · OSINT — securing Web, API, Cloud & AI surfaces",
+  tagline: "Penetration Tester · OSINT · ASM · Threat Intel",
   location: "India",
   email: "harsh23246@gmail.com",
   linkedin: "https://www.linkedin.com/in/harshalss-war10ck",
@@ -22,9 +21,8 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I work at the point where attack surface meets real business risk. Over the past five years at RedHunt Labs, I've moved from hands-on penetration testing into leading Attack Surface Management delivery end-to-end — which means the job is equal parts breaking things, proving impact, and making sure a team of consultants can do the same thing consistently and well.",
-    "My day-to-day spans Web, API, Mobile, Cloud, and increasingly AI/LLM surfaces, but the common thread is ASM-driven VAPT: mapping what an organization actually exposes before deciding how to attack it, backed by deep OSINT. I've also spent a fair amount of time outside client engagements — writing the automation, secret-scanning, and supply-chain detection tooling that lets a security team punch above its headcount.",
-    "That same instinct for finding what's exposed is why I hunt independently: vulnerabilities responsibly disclosed and rewarded by 50+ organizations, with recognition across more than 25 Halls of Fame worldwide.",
+    "I've spent 5+ years finding what organizations don't know they're exposing — from hands-on penetration testing to leading Attack Surface Management delivery at RedHunt Labs today.",
+    "The work is ASM-driven VAPT backed by deep OSINT, across Web, API, Mobile, Cloud, and AI/LLM surfaces — plus the automation and tooling that lets a security team move faster. That same instinct for what's exposed is why I hunt independently, with vulnerabilities rewarded by 50+ organizations worldwide.",
   ],
 };
 
@@ -32,7 +30,6 @@ export const stats: StatEntry[] = [
   { value: "5+", label: "Years in Offensive Security" },
   { value: "50+", label: "Companies Rewarded" },
   { value: "25+", label: "Halls of Fame" },
-  { value: "3×", label: "Internal Promotions" },
 ];
 
 export const experience: ExperienceEntry[] = [
@@ -196,20 +193,6 @@ export const credentials: CredentialEntry[] = [
     name: "Web Application Penetration Testing",
     issuer: "Cybrary",
     type: "training",
-  },
-];
-
-export const education: EducationEntry[] = [
-  {
-    degree: "Bachelor of Computer Application",
-    institution: "Rabindranath Tagore University",
-    location: "Madhya Pradesh, India",
-    year: "2025",
-  },
-  {
-    degree: "12th Science",
-    institution: "High School",
-    year: "2017",
   },
 ];
 

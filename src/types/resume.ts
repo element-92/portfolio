@@ -34,10 +34,3 @@ export interface StatEntry {
   value: string;
   label: string;
 }
-
-export interface EducationEntry {
-  degree: string;
-  institution: string;
-  location?: string;
-  year: string;
-}
