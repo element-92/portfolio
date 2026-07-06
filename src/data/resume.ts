@@ -2,6 +2,7 @@ import type {
   CaseStudy,
   CredentialEntry,
   ExperienceEntry,
+  ResearchEntry,
   SkillGroup,
   StatEntry,
 } from "@/types/resume";
@@ -16,13 +17,13 @@ export const profile = {
   github: "https://github.com/element-92",
   resumeFile: "harshal-sharma-resume.pdf",
   summary:
-    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Mobile, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real-world security risks. Has responsibly disclosed security vulnerabilities to numerous organizations worldwide, including several leading technology companies.",
+    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud Security, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real-world security risks. Leading end-to-end ASM delivery, has responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, and actively contributes to product enhancement through automation, custom tooling, and new detection capabilities.",
 };
 
 export const about = {
   paragraphs: [
-    "I've spent 5+ years finding what organizations don't know they're exposing — from hands-on penetration testing to leading Attack Surface Management delivery at RedHunt Labs today.",
-    "The work is ASM-driven VAPT backed by deep OSINT, across Web, API, Mobile, Cloud, and AI/LLM surfaces — plus the automation and tooling that lets a security team move faster. That same instinct for what's exposed is why I hunt independently, with vulnerabilities rewarded by 50+ organizations worldwide.",
+    "I've spent 5+ years finding what organizations don't know they're exposing — from hands-on penetration testing to leading end-to-end Attack Surface Management delivery at RedHunt Labs.",
+    "The work is ASM-driven VAPT backed by deep OSINT, across Web, API, Cloud, AI/LLM, and Network surfaces — plus the automation, custom tooling, and detection capabilities that let a security team move faster. That same instinct for what's exposed is why I hunt independently, with vulnerabilities rewarded by 50+ organizations worldwide.",
   ],
 };
 
@@ -81,37 +82,114 @@ export const experience: ExperienceEntry[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
-    title: "Secret Scanning & Supply Chain Risk Detection",
-    domain: "Security Automation · Supply Chain Security",
-    role: "Designer & Developer",
+    title: "GitRadar",
+    domain: "GitHub Recon · Secret Scanning",
+    role: "Creator",
     summary:
-      "Automation across JavaScript, GitHub, and Docker environments to catch exposed secrets and supply-chain risk before they reach production.",
+      "A GitHub recon and secret-scanning engine that bypasses GitHub's API rate limits to catch exposed secrets across JavaScript, GitHub, and Docker at scale.",
     detail:
-      "Built detection tooling and pipelines that scan JavaScript codebases, GitHub repositories, and Docker images for exposed secrets and supply-chain risk indicators — reducing the manual review load on the assessment team and closing a recurring coverage gap across client engagements.",
-    tags: ["JavaScript", "GitHub", "Docker", "Secret Scanning"],
+      "GitRadar handles reconnaissance and secret detection across GitHub repositories, JavaScript codebases, and Docker images — engineered to bypass GitHub API rate-limit restrictions so scans keep running across large scopes without throttling gaps.",
+    tags: ["GitHub", "JavaScript", "Docker", "Secret Scanning"],
     scope: "internal",
+    featured: true,
   },
   {
-    title: "ASM Workflow Automation",
-    domain: "Attack Surface Management",
+    title: "Large-Scale Scan Automation",
+    domain: "Attack Surface Management · Automation",
     role: "Automation Engineer",
     summary:
-      "Converted manual attack-surface analysis and OSINT workflows into automated pipelines, cutting engagement turnaround time by 80%.",
+      "Internal pipelines orchestrating vulnerability and asset scans across thousands of hosts, cutting manual engagement effort dramatically.",
     detail:
-      "Replaced repetitive, manual attack-surface discovery and OSINT-gathering steps with automated pipelines — an 80% reduction in time spent per engagement, freeing consultants to focus on validation and impact analysis instead of reconnaissance legwork.",
-    tags: ["ASM", "OSINT", "Automation"],
+      "Built scripts and pipelines that orchestrate scanning across thousands of hosts in a single engagement — the same automation work behind the roughly 80% reduction in manual time spent per assessment.",
+    tags: ["ASM", "Automation", "Scale"],
     scope: "internal",
   },
   {
-    title: "Detection Coverage & Assessment Modules",
+    title: "CVE Monitoring",
+    domain: "Threat Intelligence",
+    role: "Developer",
+    summary:
+      "Tracks newly disclosed CVEs and maps them against client attack surfaces to flag emerging, exploitable risk.",
+    detail:
+      "A monitoring workflow that correlates newly published CVEs against known client asset inventories, surfacing which disclosures are actually exploitable against real attack surface rather than generic advisories.",
+    tags: ["CVE", "Threat Intel", "Monitoring"],
+    scope: "internal",
+  },
+  {
+    title: "Product Detection Modules",
     domain: "Product Security Engineering",
     role: "Contributor & Designer",
     summary:
-      "Identified coverage gaps in ASM tooling and designed new security checks and detection modules to close them.",
+      "New security checks and assessment modules designed to close coverage gaps in ASM tooling.",
     detail:
-      "Analyzed where existing ASM tooling under-covered real-world attack paths, then designed and implemented new security checks and detection modules — feeding directly back into RedHunt Labs' product capability rather than staying a one-off engagement fix.",
+      "Identified where existing ASM tooling under-covered real-world attack paths, then designed and implemented new detection modules — feeding directly back into RedHunt Labs' product capability rather than staying a one-off engagement fix.",
     tags: ["ASM", "Detection Engineering", "Product"],
     scope: "internal",
+  },
+  {
+    title: "AI Skill for Recon",
+    domain: "AI/LLM Security · Automation",
+    role: "Developer",
+    summary:
+      "An AI-assisted reconnaissance skill that speeds up asset and exposure discovery during engagements.",
+    detail:
+      "Applies LLM-driven analysis to reconnaissance work, speeding up asset discovery and exposure triage during assessments instead of relying purely on manual review.",
+    tags: ["AI/LLM", "OSINT", "Automation"],
+    scope: "internal",
+  },
+  {
+    title: "Third-Party Asset Discovery Suite",
+    domain: "Attack Surface Management",
+    role: "Developer",
+    summary:
+      "Enumerates third-party assets across a client's vendor and partner ecosystem.",
+    detail:
+      "An in-progress suite focused on discovering and enumerating third-party assets tied to a client's extended ecosystem — vendors, partners, and integrations that traditional ASM often misses.",
+    tags: ["ASM", "Third-Party Risk"],
+    scope: "internal",
+    ongoing: true,
+  },
+];
+
+export const research: ResearchEntry[] = [
+  {
+    title: "SSL/TLS Certificate Reconnaissance",
+    description:
+      "Leveraging certificate transparency and TLS metadata to expand asset discovery across large scopes.",
+  },
+  {
+    title: "Vulnerability Scanning at Scale",
+    description:
+      "Detecting a single vulnerability class across thousands of hosts to surface every affected instance.",
+  },
+  {
+    title: "Smart Scanning for Wide-Scope Assets",
+    description:
+      "Efficient, prioritized coverage of large asset inventories with reduced noise.",
+  },
+  {
+    title: "New OSINT Techniques",
+    description:
+      "Operationalizing lesser-known OSINT methods for deeper asset and data-exposure discovery.",
+  },
+];
+
+export const threatIntel: ResearchEntry[] = [
+  {
+    title: "Vulnerability Intelligence",
+    description:
+      "CVE correlation to flag emerging, exploitable risks against known client assets.",
+  },
+  {
+    title: "Supply Chain Risk Intel",
+    description:
+      "Dependency, secret, and artifact exposure across code and container ecosystems.",
+    ongoing: true,
+  },
+  {
+    title: "Credential & Secret Exposure Monitoring",
+    description:
+      "Leaked secrets across repos, container images, client-side code, and cloud buckets.",
   },
 ];
 
@@ -169,6 +247,11 @@ export const recognition = {
 
 export const credentials: CredentialEntry[] = [
   {
+    name: "Certified LLM Security Professional (CLLMSP)",
+    issuer: "Red Team Leaders",
+    type: "certification",
+  },
+  {
     name: "Certified AppSec Practitioner (CAP)",
     issuer: "The SecOps Group",
     type: "certification",
@@ -202,6 +285,7 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
+  { label: "Research", href: "#research" },
   { label: "Skills", href: "#skills" },
   { label: "Recognition", href: "#recognition" },
   { label: "Certifications", href: "#certifications" },

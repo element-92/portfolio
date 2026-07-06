@@ -7,6 +7,7 @@ import { About } from "@/sections/About";
 import { StatsBand } from "@/sections/StatsBand";
 import { Experience } from "@/sections/Experience";
 import { NotableWork } from "@/sections/NotableWork";
+import { Research } from "@/sections/Research";
 import { Skills } from "@/sections/Skills";
 import { Recognition } from "@/sections/Recognition";
 import { Certifications } from "@/sections/Certifications";
@@ -28,6 +29,7 @@ function App() {
         <StatsBand />
         <Experience />
         <NotableWork />
+        <Research />
         <Skills />
         <Recognition />
         <Certifications />

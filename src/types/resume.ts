@@ -16,6 +16,14 @@ export interface CaseStudy {
   detail: string;
   tags: string[];
   scope: "internal";
+  featured?: boolean;
+  ongoing?: boolean;
+}
+
+export interface ResearchEntry {
+  title: string;
+  description: string;
+  ongoing?: boolean;
 }
 
 export interface SkillGroup {

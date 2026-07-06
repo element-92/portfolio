@@ -1,5 +1,15 @@
 import { AnimatePresence, motion } from "motion/react";
-import { ChevronDown, Lock } from "lucide-react";
+import {
+  Bug,
+  Building2,
+  ChevronDown,
+  Lock,
+  Radar,
+  ScanSearch,
+  Sparkles,
+  Workflow,
+  type LucideIcon,
+} from "lucide-react";
 import { useState } from "react";
 import { caseStudies } from "@/data/resume";
 import type { CaseStudy } from "@/types/resume";
@@ -9,14 +19,48 @@ import { GlassCard } from "@/components/GlassCard";
 import { Chip } from "@/components/Chip";
 import { cn } from "@/utils/cn";
 
+const caseStudyIcons: Record<string, LucideIcon> = {
+  GitRadar: Radar,
+  "Large-Scale Scan Automation": Workflow,
+  "CVE Monitoring": Bug,
+  "Product Detection Modules": ScanSearch,
+  "AI Skill for Recon": Sparkles,
+  "Third-Party Asset Discovery Suite": Building2,
+};
+
 function CaseStudyCard({ study }: { study: CaseStudy }) {
   const [open, setOpen] = useState(false);
+  const Icon = caseStudyIcons[study.title];
 
   return (
-    <GlassCard as="article" className="flex h-full flex-col">
-      <div className="flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-muted uppercase">
-        <Lock size={11} /> Internal · RedHunt Labs
+    <GlassCard
+      as="article"
+      className={cn(
+        "flex h-full flex-col",
+        study.featured && "border-primary/40",
+      )}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1.5 font-mono text-[11px] tracking-wide text-muted uppercase">
+          <Lock size={11} /> Internal · RedHunt Labs
+        </div>
+        {study.featured && (
+          <span className="rounded-full bg-primary/15 px-2.5 py-0.5 font-mono text-[10px] tracking-wide text-primary uppercase">
+            Flagship
+          </span>
+        )}
+        {study.ongoing && (
+          <span className="rounded-full bg-secondary/15 px-2.5 py-0.5 font-mono text-[10px] tracking-wide text-secondary uppercase">
+            Ongoing
+          </span>
+        )}
       </div>
+
+      {Icon && (
+        <span className="mt-4 flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary">
+          <Icon size={20} />
+        </span>
+      )}
 
       <h3 className="mt-4 font-display text-lg font-semibold text-text">
         {study.title}
@@ -76,7 +120,7 @@ export function NotableWork() {
     <section id="work" className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
       <SectionHeading
         eyebrow="Notable Work"
-        title="Tooling built to scale offensive security delivery."
+        title="Tools and automation built to scale offensive security delivery."
         description="Internal RedHunt Labs initiatives — proprietary work, so no public repos, but real engineering with measurable impact."
       />
 
