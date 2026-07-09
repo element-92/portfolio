@@ -16,12 +16,12 @@ export const profile = {
   github: "https://github.com/element-92",
   resumeFile: "harshal-sharma-resume.pdf",
   summary:
-    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud Security, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real-world security risks. Leading end-to-end ASM delivery, has responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, and actively contributes to product enhancement through automation, custom tooling, and new detection capabilities.",
+    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud Security, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real world security risks. Leading end to end ASM delivery, has responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, and actively contributes to product enhancement through automation, custom tooling, and new detection capabilities.",
 };
 
 export const about = {
   paragraphs: [
-    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments through Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), Software Composition Analysis (SCA), Open-Source Intelligence (OSINT), Static and Dynamic Application Security Testing (SAST & DAST), and Threat Modeling to identify and mitigate real-world security risks. Experienced in Security Automation and AI & Agentic Workflow Automation, developing scalable tools and workflows that improve security operations and assessment efficiency. Responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, while combining technical expertise with strong management and leadership skills to deliver impactful security outcomes.",
+    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments through Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), Software Composition Analysis (SCA), Open Source Intelligence (OSINT), Static and Dynamic Application Security Testing (SAST & DAST), and Threat Modeling to identify and mitigate real world security risks. Experienced in Security Automation and AI & Agentic Workflow Automation, developing scalable tools and workflows that improve security operations and assessment efficiency. Responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, while combining technical expertise with strong management and leadership skills to deliver impactful security outcomes.",
   ],
 };
 
@@ -39,26 +39,26 @@ export const experience: ExperienceEntry[] = [
     end: "Current",
     tags: ["ASM", "VAPT", "OSINT", "Team Leadership", "Security Automation"],
     bullets: [
-      "Conduct Web, API, Mobile, and Network Penetration Testing engagements to identify security vulnerabilities and provide risk-based remediation recommendations.",
-      "Perform Attack Surface Management (ASM)-driven VAPT through comprehensive attack surface analysis and in-depth Open-Source Intelligence (OSINT).",
-      "Lead end-to-end Attack Surface Management assessments while managing and mentoring a team of security consultants to ensure high-quality project delivery.",
-      "Collaborate with clients and cross-functional internal teams to define engagement scope, communicate security findings, and provide technical security guidance.",
-      "Develop automation scripts, security tools, pipelines, and workflows — including JavaScript, GitHub, and Docker secret-scanning and supply-chain risk detection solutions — to streamline offensive security assessments and improve team efficiency.",
+      "Conduct Web, API, Mobile, and Network Penetration Testing engagements to identify security vulnerabilities and provide risk based remediation recommendations.",
+      "Perform Attack Surface Management (ASM) driven VAPT through comprehensive attack surface analysis and in depth Open Source Intelligence (OSINT).",
+      "Lead end to end Attack Surface Management assessments while managing and mentoring a team of security consultants to ensure high quality project delivery.",
+      "Collaborate with clients and cross functional internal teams to define engagement scope, communicate security findings, and provide technical security guidance.",
+      "Develop automation scripts, security tools, pipelines, and workflows, including JavaScript, GitHub, and Docker secret scanning and supply chain risk detection solutions, to streamline offensive security assessments and improve team efficiency.",
       "Contribute to product enhancements by identifying and addressing coverage gaps through the design and implementation of new security checks, detection capabilities, and assessment modules.",
-      "Lead technical interviews, evaluating practical penetration testing skills, security methodologies, OSINT, and problem-solving capability.",
+      "Lead technical interviews, evaluating practical penetration testing skills, security methodologies, OSINT, and problem solving capability.",
     ],
   },
   {
-    role: "Security Consultant — CPS Lead",
+    role: "Security Consultant · CPS Lead",
     company: "RedHunt Labs",
     start: "04/2022",
     end: "03/2024",
     tags: ["ASM", "OSINT", "AWS Cloud Audits", "Team Management"],
     bullets: [
       "Engaged in Penetration Testing on Web, APIs, and Network infrastructures.",
-      "Performed Attack Surface Management (ASM)-driven VAPT, centered on attack surface analysis and in-depth Open-Source Intelligence (OSINT).",
+      "Performed Attack Surface Management (ASM) driven VAPT, centered on attack surface analysis and in depth Open Source Intelligence (OSINT).",
       "Performed AWS Cloud Audits.",
-      "Managed a team and end-to-end Attack Surface Management assessments.",
+      "Managed a team and end to end Attack Surface Management assessments.",
       "Ran regular engagements with clients and internal teams.",
       "Owned reporting, documentation, and content creation.",
     ],
@@ -70,7 +70,7 @@ export const experience: ExperienceEntry[] = [
     end: "03/2022",
     tags: ["ASM", "OSINT", "Automation", "AWS"],
     bullets: [
-      "Performed Attack Surface Management (ASM)-driven VAPT — attack surface analysis and in-depth OSINT — while continuously converting manual workflows into automation that reduced time consumption by 80%.",
+      "Performed Attack Surface Management (ASM) driven VAPT, combining attack surface analysis and in depth OSINT, while continuously converting manual workflows into automation that reduced time consumption by 80%.",
       "Performed regular Penetration Testing on Web, APIs, and Network infrastructures.",
       "Performed AWS Cloud Audits.",
       "Owned reporting, documentation, and content creation.",
@@ -82,30 +82,27 @@ export const caseStudies: CaseStudy[] = [
   {
     title: "GitRadar",
     domain: "GitHub Recon · Secret Scanning",
-    role: "Creator",
     summary:
-      "A GitHub recon and secret-scanning engine that bypasses GitHub's API rate limits to catch exposed secrets across JavaScript, GitHub, and Docker at scale.",
+      "A GitHub recon and secret scanning engine that bypasses GitHub's API rate limits to catch exposed secrets across JavaScript, GitHub, and Docker at scale.",
     detail:
-      "GitRadar handles reconnaissance and secret detection across GitHub repositories, JavaScript codebases, and Docker images — engineered to bypass GitHub API rate-limit restrictions so scans keep running across large scopes without throttling gaps.",
+      "GitRadar handles reconnaissance and secret detection across GitHub repositories, JavaScript codebases, and Docker images, engineered to bypass GitHub API rate limit restrictions so scans keep running across large scopes without throttling gaps.",
     tags: ["GitHub", "JavaScript", "Docker", "Secret Scanning"],
     scope: "internal",
     featured: true,
   },
   {
-    title: "Large-Scale Scan Automation",
+    title: "Large Scale Scan Automation",
     domain: "Attack Surface Management · Automation",
-    role: "Automation Engineer",
     summary:
       "Internal pipelines orchestrating vulnerability and asset scans across thousands of hosts, cutting manual engagement effort dramatically.",
     detail:
-      "Built scripts and pipelines that orchestrate scanning across thousands of hosts in a single engagement — the same automation work behind the roughly 80% reduction in manual time spent per assessment.",
+      "Built scripts and pipelines that orchestrate scanning across thousands of hosts in a single engagement, the same automation work behind the roughly 80% reduction in manual time spent per assessment.",
     tags: ["ASM", "Automation", "Scale"],
     scope: "internal",
   },
   {
     title: "CVE Monitoring",
     domain: "Threat Intelligence",
-    role: "Developer",
     summary:
       "Tracks newly disclosed CVEs and maps them against client attack surfaces to flag emerging, exploitable risk.",
     detail:
@@ -116,34 +113,31 @@ export const caseStudies: CaseStudy[] = [
   {
     title: "Product Detection Modules",
     domain: "Product Security Engineering",
-    role: "Contributor & Designer",
     summary:
       "New security checks and assessment modules designed to close coverage gaps in ASM tooling.",
     detail:
-      "Identified where existing ASM tooling under-covered real-world attack paths, then designed and implemented new detection modules — feeding directly back into RedHunt Labs' product capability rather than staying a one-off engagement fix.",
+      "Identified where existing ASM tooling missed real world attack paths, then designed and implemented new detection modules, feeding directly back into RedHunt Labs' product capability rather than staying a one off engagement fix.",
     tags: ["ASM", "Detection Engineering", "Product"],
     scope: "internal",
   },
   {
     title: "AI Skill for Recon",
     domain: "AI/LLM Security · Automation",
-    role: "Developer",
     summary:
-      "An AI-assisted reconnaissance skill that speeds up asset and exposure discovery during engagements.",
+      "An AI assisted reconnaissance skill that speeds up asset and exposure discovery during engagements.",
     detail:
-      "Applies LLM-driven analysis to reconnaissance work, speeding up asset discovery and exposure triage during assessments instead of relying purely on manual review.",
+      "Applies LLM driven analysis to reconnaissance work, speeding up asset discovery and exposure triage during assessments instead of relying purely on manual review.",
     tags: ["AI/LLM", "OSINT", "Automation"],
     scope: "internal",
   },
   {
-    title: "Third-Party Asset Discovery Suite",
+    title: "Third Party Asset Discovery Suite",
     domain: "Attack Surface Management",
-    role: "Developer",
     summary:
-      "Enumerates third-party assets across a client's vendor and partner ecosystem.",
+      "Enumerates third party assets across a client's vendor and partner ecosystem.",
     detail:
-      "An in-progress suite focused on discovering and enumerating third-party assets tied to a client's extended ecosystem — vendors, partners, and integrations that traditional ASM often misses.",
-    tags: ["ASM", "Third-Party Risk"],
+      "An ongoing suite focused on discovering and enumerating third party assets tied to a client's extended ecosystem, including vendors, partners, and integrations that traditional ASM often misses.",
+    tags: ["ASM", "Third Party Risk"],
     scope: "internal",
     ongoing: true,
   },
@@ -161,14 +155,14 @@ export const research: ResearchEntry[] = [
       "Detecting a single vulnerability class across thousands of hosts to surface every affected instance.",
   },
   {
-    title: "Smart Scanning for Wide-Scope Assets",
+    title: "Smart Scanning for Wide Scope Assets",
     description:
       "Efficient, prioritized coverage of large asset inventories with reduced noise.",
   },
   {
     title: "New OSINT Techniques",
     description:
-      "Operationalizing lesser-known OSINT methods for deeper asset and data-exposure discovery.",
+      "Operationalizing lesser known OSINT methods for deeper asset and data exposure discovery.",
   },
 ];
 
@@ -187,7 +181,7 @@ export const threatIntel: ResearchEntry[] = [
   {
     title: "Credential & Secret Exposure Monitoring",
     description:
-      "Leaked secrets across repos, container images, client-side code, and cloud buckets.",
+      "Leaked secrets across repos, container images, client side code, and cloud buckets.",
   },
 ];
 
@@ -213,7 +207,7 @@ export const recognition = {
     { value: "50+", label: "Companies Rewarded" },
     { value: "25+", label: "Halls of Fame" },
   ],
-  honor: "Top 15 Researcher — NCIIPC India (2021)",
+  honor: "Top 15 Researcher · NCIIPC India (2021)",
   hallOfFame: [
     "Nokia",
     "Oracle",
@@ -254,6 +248,12 @@ export const credentials: CredentialEntry[] = [
     type: "certification",
   },
   {
+    name: "APIsec Certified Practitioner",
+    issuer: "APIsec University",
+    type: "certification",
+    link: "https://www.credly.com/earner/earned/badge/3c2916d8-627a-47ef-a1f7-d3bf5bcfbf6f",
+  },
+  {
     name: "Practical Ethical Hacking",
     issuer: "Heath Adams (TCM Security)",
     type: "training",
@@ -263,6 +263,12 @@ export const credentials: CredentialEntry[] = [
     name: "Web Application Penetration Testing",
     issuer: "Cybrary",
     type: "training",
+  },
+  {
+    name: "Recorded Future Intelligence Fundamentals",
+    issuer: "Recorded Future",
+    type: "training",
+    link: "https://verify.skilljar.com/c/ybezmhisrzr4",
   },
 ];
 

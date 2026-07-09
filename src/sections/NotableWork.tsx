@@ -66,7 +66,6 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
         {study.title}
       </h3>
       <p className="mt-1 text-xs text-muted">{study.domain}</p>
-      <p className="mt-1 text-xs text-muted/80">Role: {study.role}</p>
 
       <p className="mt-4 flex-1 text-sm leading-relaxed text-muted">
         {study.summary}

@@ -64,7 +64,7 @@ export function Research() {
       <SectionHeading
         eyebrow="Research"
         title="Finding what standard tooling misses."
-        description="Techniques and intelligence work developed alongside client engagements — expanding discovery, cutting noise, and flagging risk before it's exploited."
+        description="Techniques and intelligence work developed alongside client engagements, expanding discovery, cutting noise, and flagging risk before it's exploited."
       />
 
       <div className="mt-14">

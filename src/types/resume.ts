@@ -11,7 +11,6 @@ export interface ExperienceEntry {
 export interface CaseStudy {
   title: string;
   domain: string;
-  role: string;
   summary: string;
   detail: string;
   tags: string[];
@@ -32,6 +31,7 @@ export interface CredentialEntry {
   issuer: string;
   type: "certification" | "training";
   year?: string;
+  link?: string;
 }
 
 export interface StatEntry {

@@ -16,7 +16,7 @@ export function Contact() {
           Have a security engagement in mind?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted">
-          The fastest way to reach me is email or LinkedIn — I read both
+          The fastest way to reach me is email or LinkedIn. I read both
           regularly.
         </p>
       </Reveal>
@@ -44,9 +44,9 @@ export function Contact() {
             <PenSquare size={18} />
           </span>
           <div>
-            <p className="text-sm font-medium text-text">Research write-ups</p>
+            <p className="text-sm font-medium text-text">Research write ups</p>
             <p className="text-sm text-muted">
-              Coming soon — long-form breakdowns of ASM and OSINT work.
+              Coming soon: long form breakdowns of ASM and OSINT work.
             </p>
           </div>
         </GlassCard>

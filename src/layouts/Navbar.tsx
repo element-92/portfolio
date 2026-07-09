@@ -4,6 +4,7 @@ import { useState } from "react";
 import { navLinks, profile } from "@/data/resume";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { AudioToggle } from "@/components/AudioToggle";
 import { cn } from "@/utils/cn";
 
 const sectionIds = navLinks.map((link) => link.href.replace("#", ""));
@@ -21,7 +22,7 @@ export function Navbar() {
         <a
           href="#top"
           className="font-display text-sm font-semibold tracking-wide text-text"
-          aria-label={`${profile.name} — home`}
+          aria-label={`${profile.name} home`}
         >
           HS<span className="text-accent">.</span>
         </a>
@@ -50,6 +51,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
+          <AudioToggle />
           <ThemeToggle />
           <button
             type="button"

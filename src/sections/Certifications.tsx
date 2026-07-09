@@ -1,8 +1,8 @@
-import { BadgeCheck, GraduationCap } from "lucide-react";
+import { BadgeCheck, ExternalLink, GraduationCap } from "lucide-react";
 import { credentials } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
-import { GlassCard } from "@/components/GlassCard";
+import { GlassCard, GlassCardLink } from "@/components/GlassCard";
 import { cn } from "@/utils/cn";
 
 export function Certifications() {
@@ -19,9 +19,21 @@ export function Certifications() {
       <StaggerGroup className="mt-14 grid gap-5 sm:grid-cols-2" stagger={0.05}>
         {credentials.map((credential) => {
           const isCert = credential.type === "certification";
+          const Card = credential.link ? GlassCardLink : GlassCard;
+          const cardProps = credential.link
+            ? {
+                href: credential.link,
+                target: "_blank",
+                rel: "noreferrer",
+              }
+            : {};
+
           return (
             <StaggerItem key={credential.name}>
-              <GlassCard className="flex h-full items-start gap-4 p-5">
+              <Card
+                className="flex h-full items-start gap-4 p-5"
+                {...cardProps}
+              >
                 <span
                   className={cn(
                     "flex h-10 w-10 shrink-0 items-center justify-center rounded-full",
@@ -36,9 +48,12 @@ export function Certifications() {
                     <GraduationCap size={18} />
                   )}
                 </span>
-                <div>
-                  <p className="text-sm font-medium text-text">
+                <div className="flex-1">
+                  <p className="flex items-center gap-1.5 text-sm font-medium text-text">
                     {credential.name}
+                    {credential.link && (
+                      <ExternalLink size={12} className="text-muted" />
+                    )}
                   </p>
                   <p className="mt-1 text-sm text-muted">{credential.issuer}</p>
                   <span
@@ -50,7 +65,7 @@ export function Certifications() {
                     {isCert ? "Certification" : "Training Program"}
                   </span>
                 </div>
-              </GlassCard>
+              </Card>
             </StaggerItem>
           );
         })}
