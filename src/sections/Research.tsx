@@ -17,7 +17,7 @@ import { GlassCard } from "@/components/GlassCard";
 const researchIcons: Record<string, LucideIcon> = {
   "SSL/TLS Certificate Reconnaissance": FileKey,
   "Vulnerability Scanning at Scale": ScanLine,
-  "Smart Scanning for Wide-Scope Assets": Filter,
+  "Smart Scanning for Wide Scope Assets": Filter,
   "New OSINT Techniques": Compass,
 };
 

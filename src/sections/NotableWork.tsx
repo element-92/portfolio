@@ -21,11 +21,11 @@ import { cn } from "@/utils/cn";
 
 const caseStudyIcons: Record<string, LucideIcon> = {
   GitRadar: Radar,
-  "Large-Scale Scan Automation": Workflow,
+  "Large Scale Scan Automation": Workflow,
   "CVE Monitoring": Bug,
   "Product Detection Modules": ScanSearch,
   "AI Skill for Recon": Sparkles,
-  "Third-Party Asset Discovery Suite": Building2,
+  "Third Party Asset Discovery Suite": Building2,
 };
 
 function CaseStudyCard({ study }: { study: CaseStudy }) {
