@@ -26,10 +26,6 @@ export interface ResearchEntry {
   ongoing?: boolean;
 }
 
-export interface SkillGroup {
-  title: string;
-  skills: string[];
-}
 
 export interface CredentialEntry {
   name: string;

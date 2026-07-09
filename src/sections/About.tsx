@@ -8,9 +8,6 @@ export function About() {
         <span className="font-mono text-xs tracking-[0.2em] text-accent uppercase">
           About
         </span>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight text-text sm:text-4xl">
-          Turning exposed attack surface into understood risk.
-        </h2>
       </Reveal>
 
       <div className="mt-6 space-y-5">

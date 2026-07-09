@@ -121,7 +121,6 @@ export function NotableWork() {
       <SectionHeading
         eyebrow="Notable Work"
         title="Tools and automation built to scale offensive security delivery."
-        description="Internal RedHunt Labs initiatives — proprietary work, so no public repos, but real engineering with measurable impact."
       />
 
       <StaggerGroup className="mt-14 grid gap-6 md:grid-cols-3">

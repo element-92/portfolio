@@ -12,11 +12,7 @@ export function Experience() {
 
   return (
     <section id="experience" className="mx-auto max-w-4xl px-6 py-24 sm:py-32">
-      <SectionHeading
-        eyebrow="Experience"
-        title="5 years at RedHunt Labs — from associate to delivery lead."
-        description="Three roles, one focus: progressing from hands-on assessments to leading Attack Surface Management delivery end-to-end."
-      />
+      <SectionHeading eyebrow="Experience" />
 
       <ol className="relative mt-14 space-y-8 border-l border-border pl-8">
         {experience.map((entry, index) => {

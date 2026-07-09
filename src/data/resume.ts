@@ -3,7 +3,6 @@ import type {
   CredentialEntry,
   ExperienceEntry,
   ResearchEntry,
-  SkillGroup,
   StatEntry,
 } from "@/types/resume";
 
@@ -22,8 +21,7 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I've spent 5+ years finding what organizations don't know they're exposing — from hands-on penetration testing to leading end-to-end Attack Surface Management delivery at RedHunt Labs.",
-    "The work is ASM-driven VAPT backed by deep OSINT, across Web, API, Cloud, AI/LLM, and Network surfaces — plus the automation, custom tooling, and detection capabilities that let a security team move faster. That same instinct for what's exposed is why I hunt independently, with vulnerabilities rewarded by 50+ organizations worldwide.",
+    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments through Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), Software Composition Analysis (SCA), Open-Source Intelligence (OSINT), Static and Dynamic Application Security Testing (SAST & DAST), and Threat Modeling to identify and mitigate real-world security risks. Experienced in Security Automation and AI & Agentic Workflow Automation, developing scalable tools and workflows that improve security operations and assessment efficiency. Responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, while combining technical expertise with strong management and leadership skills to deliver impactful security outcomes.",
   ],
 };
 
@@ -193,31 +191,21 @@ export const threatIntel: ResearchEntry[] = [
   },
 ];
 
-export const skillGroups: SkillGroup[] = [
-  {
-    title: "Offensive Security Domains",
-    skills: [
-      "Web & Mobile Application Penetration Testing",
-      "Network Penetration Testing",
-      "API Penetration Testing",
-      "Cloud Security",
-      "AI/LLM Security",
-    ],
-  },
-  {
-    title: "Assessment Methodologies",
-    skills: [
-      "Attack Surface Management",
-      "OSINT",
-      "Threat Modeling",
-      "SAST & DAST",
-      "SCA",
-    ],
-  },
-  {
-    title: "Security Engineering",
-    skills: ["Malware Analysis", "Security Automation"],
-  },
+export const skills: string[] = [
+  "Web & Mobile Application Penetration Testing",
+  "Network Penetration Testing",
+  "API Penetration Testing",
+  "Cloud Security",
+  "AI/LLM Security",
+  "Attack Surface Management",
+  "OSINT",
+  "Threat Modeling",
+  "SAST & DAST",
+  "SCA",
+  "Malware Analysis",
+  "Security Automation",
+  "AI and Agentic Workflow Automation",
+  "Management and Leadership",
 ];
 
 export const recognition = {
@@ -225,8 +213,7 @@ export const recognition = {
     { value: "50+", label: "Companies Rewarded" },
     { value: "25+", label: "Halls of Fame" },
   ],
-  honor:
-    "Listed among the Top 15 Researchers (2021) in the newsletter by NCIIPC India — a Unit of the National Technical Research Organisation.",
+  honor: "Top 15 Researcher — NCIIPC India (2021)",
   hallOfFame: [
     "Nokia",
     "Oracle",
