@@ -24,14 +24,18 @@ const hallOfFameLogos: Record<string, IconType> = {
   Audi: SiAudi,
 };
 
-export function Recognition() {
-  const withLogo = recognition.hallOfFame.filter(
-    (name) => hallOfFameLogos[name],
-  );
-  const withoutLogo = recognition.hallOfFame.filter(
-    (name) => !hallOfFameLogos[name],
-  );
+// Approximate public brand accent colors, used only for a stylized text
+// treatment, not a reproduction of any company's logo artwork.
+const hallOfFameAccents: Record<string, string> = {
+  Oracle: "#C74634",
+  SANS: "#06BCCD",
+  Takealot: "#0071CE",
+  Fastweb: "#C9A227",
+  "University of Cambridge": "#85B09A",
+  "Daimler AG": "#A4AAAE",
+};
 
+export function Recognition() {
   return (
     <section id="recognition" className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
       <SectionHeading
@@ -46,18 +50,30 @@ export function Recognition() {
         </h3>
         <StaggerGroup
           className="mt-5 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-7"
-          stagger={0.04}
+          stagger={0.03}
         >
-          {withLogo.map((name) => {
+          {recognition.hallOfFame.map((name) => {
             const Logo = hallOfFameLogos[name];
+            const accent = hallOfFameAccents[name];
             return (
               <StaggerItem key={name}>
-                <GlassCard className="group flex flex-col items-center gap-2 p-4 text-center">
-                  <Logo
-                    size={26}
-                    className="text-muted transition-colors duration-300 group-hover:text-text"
-                  />
-                  <span className="text-xs text-muted">{name}</span>
+                <GlassCard className="group flex h-full flex-col items-center justify-center gap-2 p-4 text-center">
+                  {Logo ? (
+                    <>
+                      <Logo
+                        size={26}
+                        className="text-muted transition-colors duration-300 group-hover:text-text"
+                      />
+                      <span className="text-xs text-muted">{name}</span>
+                    </>
+                  ) : (
+                    <span
+                      className="font-display text-sm font-semibold transition-opacity duration-300"
+                      style={{ color: accent }}
+                    >
+                      {name}
+                    </span>
+                  )}
                 </GlassCard>
               </StaggerItem>
             );
@@ -70,11 +86,6 @@ export function Recognition() {
               {recognition.honor}
             </Chip>
           </StaggerItem>
-          {withoutLogo.map((name) => (
-            <StaggerItem key={name}>
-              <Chip>{name}</Chip>
-            </StaggerItem>
-          ))}
           <StaggerItem>
             <Chip className="border-dashed text-muted">
               {recognition.hallOfFameNote}
