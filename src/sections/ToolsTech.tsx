@@ -18,7 +18,7 @@ export function ToolsTech() {
       <SectionHeading
         eyebrow="Tools & Technologies"
         title="What powers the automation."
-        description="The stack behind the secret-scanning, supply-chain, and ASM tooling built at RedHunt Labs."
+        description="The stack behind the secret scanning, supply chain, and ASM tooling built at RedHunt Labs."
       />
 
       <StaggerGroup
