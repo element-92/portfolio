@@ -25,7 +25,6 @@ export interface ResearchEntry {
   ongoing?: boolean;
 }
 
-
 export interface CredentialEntry {
   name: string;
   issuer: string;

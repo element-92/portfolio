@@ -29,7 +29,9 @@ export function AudioToggle() {
       <button
         type="button"
         onClick={toggle}
-        aria-label={playing ? "Pause background music" : "Play background music"}
+        aria-label={
+          playing ? "Pause background music" : "Play background music"
+        }
         aria-pressed={playing}
         className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors duration-200 hover:border-primary/50 hover:text-text"
       >

@@ -13,17 +13,14 @@ export function About() {
       <div className="mt-6 space-y-5">
         {about.paragraphs.map((paragraph, index) => (
           <Reveal key={paragraph.slice(0, 24)} delay={index * 0.08}>
-            <p className="text-base leading-relaxed text-muted">
-              {paragraph}
-            </p>
+            <p className="text-base leading-relaxed text-muted">{paragraph}</p>
           </Reveal>
         ))}
       </div>
 
       <Reveal delay={0.2}>
         <p className="mt-6 text-sm text-muted/80">
-          Based in {profile.location}, working with clients and teams
-          globally.
+          Based in {profile.location}, working with clients and teams globally.
         </p>
       </Reveal>
     </section>

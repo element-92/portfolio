@@ -51,9 +51,7 @@ function InsightCard({
       <h4 className="font-display text-base font-semibold text-text">
         {entry.title}
       </h4>
-      <p className="text-sm leading-relaxed text-muted">
-        {entry.description}
-      </p>
+      <p className="text-sm leading-relaxed text-muted">{entry.description}</p>
     </GlassCard>
   );
 }
@@ -71,10 +69,7 @@ export function Research() {
         <h3 className="font-mono text-xs tracking-[0.15em] text-muted uppercase">
           Research & Techniques
         </h3>
-        <StaggerGroup
-          className="mt-5 grid gap-5 sm:grid-cols-2"
-          stagger={0.05}
-        >
+        <StaggerGroup className="mt-5 grid gap-5 sm:grid-cols-2" stagger={0.05}>
           {research.map((entry) => (
             <StaggerItem key={entry.title}>
               <InsightCard entry={entry} icons={researchIcons} />
@@ -87,10 +82,7 @@ export function Research() {
         <h3 className="font-mono text-xs tracking-[0.15em] text-muted uppercase">
           Threat Intelligence
         </h3>
-        <StaggerGroup
-          className="mt-5 grid gap-5 sm:grid-cols-3"
-          stagger={0.05}
-        >
+        <StaggerGroup className="mt-5 grid gap-5 sm:grid-cols-3" stagger={0.05}>
           {threatIntel.map((entry) => (
             <StaggerItem key={entry.title}>
               <InsightCard entry={entry} icons={threatIntelIcons} />
