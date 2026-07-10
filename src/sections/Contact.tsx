@@ -4,6 +4,7 @@ import { profile } from "@/data/resume";
 import { Reveal } from "@/components/Reveal";
 import { MagneticButton } from "@/components/Button";
 import { GlassCard } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 
 export function Contact() {
   return (
@@ -39,17 +40,21 @@ export function Contact() {
       </Reveal>
 
       <Reveal delay={0.18} className="mt-8">
-        <GlassCard className="flex items-center gap-4 py-5 text-left">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary/15 text-secondary">
-            <PenSquare size={18} />
-          </span>
-          <div>
-            <p className="text-sm font-medium text-text">Research write ups</p>
-            <p className="text-sm text-muted">
-              Coming soon: long form breakdowns of ASM and OSINT work.
-            </p>
-          </div>
-        </GlassCard>
+        <TiltCard>
+          <GlassCard className="flex items-center gap-4 py-5 text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary/15 text-secondary">
+              <PenSquare size={18} />
+            </span>
+            <div>
+              <p className="text-sm font-medium text-text">
+                Research write ups
+              </p>
+              <p className="text-sm text-muted">
+                Coming soon: long form breakdowns of ASM and OSINT work.
+              </p>
+            </div>
+          </GlassCard>
+        </TiltCard>
       </Reveal>
     </section>
   );

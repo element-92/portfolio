@@ -3,6 +3,7 @@ import { credentials } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 import { GlassCard, GlassCardLink } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 import { cn } from "@/utils/cn";
 
 export function Certifications() {
@@ -30,42 +31,46 @@ export function Certifications() {
 
           return (
             <StaggerItem key={credential.name}>
-              <Card
-                className="flex h-full items-start gap-4 p-5"
-                {...cardProps}
-              >
-                <span
-                  className={cn(
-                    "flex h-10 w-10 shrink-0 items-center justify-center rounded-full",
-                    isCert
-                      ? "bg-primary/15 text-primary"
-                      : "bg-secondary/15 text-secondary",
-                  )}
+              <TiltCard className="h-full">
+                <Card
+                  className="flex h-full items-start gap-4 p-5"
+                  {...cardProps}
                 >
-                  {isCert ? (
-                    <BadgeCheck size={18} />
-                  ) : (
-                    <GraduationCap size={18} />
-                  )}
-                </span>
-                <div className="flex-1">
-                  <p className="flex items-center gap-1.5 text-sm font-medium text-text">
-                    {credential.name}
-                    {credential.link && (
-                      <ExternalLink size={12} className="text-muted" />
-                    )}
-                  </p>
-                  <p className="mt-1 text-sm text-muted">{credential.issuer}</p>
                   <span
                     className={cn(
-                      "mt-2 inline-block font-mono text-[11px] tracking-wide uppercase",
-                      isCert ? "text-primary" : "text-secondary",
+                      "flex h-10 w-10 shrink-0 items-center justify-center rounded-full",
+                      isCert
+                        ? "bg-primary/15 text-primary"
+                        : "bg-secondary/15 text-secondary",
                     )}
                   >
-                    {isCert ? "Certification" : "Training Program"}
+                    {isCert ? (
+                      <BadgeCheck size={18} />
+                    ) : (
+                      <GraduationCap size={18} />
+                    )}
                   </span>
-                </div>
-              </Card>
+                  <div className="flex-1">
+                    <p className="flex items-center gap-1.5 text-sm font-medium text-text">
+                      {credential.name}
+                      {credential.link && (
+                        <ExternalLink size={12} className="text-muted" />
+                      )}
+                    </p>
+                    <p className="mt-1 text-sm text-muted">
+                      {credential.issuer}
+                    </p>
+                    <span
+                      className={cn(
+                        "mt-2 inline-block font-mono text-[11px] tracking-wide uppercase",
+                        isCert ? "text-primary" : "text-secondary",
+                      )}
+                    >
+                      {isCert ? "Certification" : "Training Program"}
+                    </span>
+                  </div>
+                </Card>
+              </TiltCard>
             </StaggerItem>
           );
         })}

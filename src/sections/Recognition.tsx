@@ -12,6 +12,7 @@ import { recognition } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 import { GlassCard } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 import { Chip } from "@/components/Chip";
 
 const hallOfFameLogos: Record<string, IconType> = {
@@ -57,24 +58,26 @@ export function Recognition() {
             const accent = hallOfFameAccents[name];
             return (
               <StaggerItem key={name}>
-                <GlassCard className="group flex h-full flex-col items-center justify-center gap-2 p-4 text-center">
-                  {Logo ? (
-                    <>
-                      <Logo
-                        size={26}
-                        className="text-muted transition-colors duration-300 group-hover:text-text"
-                      />
-                      <span className="text-xs text-muted">{name}</span>
-                    </>
-                  ) : (
-                    <span
-                      className="font-display text-sm font-semibold transition-opacity duration-300"
-                      style={{ color: accent }}
-                    >
-                      {name}
-                    </span>
-                  )}
-                </GlassCard>
+                <TiltCard className="h-full">
+                  <GlassCard className="group flex h-full flex-col items-center justify-center gap-2 p-4 text-center">
+                    {Logo ? (
+                      <>
+                        <Logo
+                          size={26}
+                          className="text-muted transition-colors duration-300 group-hover:text-text"
+                        />
+                        <span className="text-xs text-muted">{name}</span>
+                      </>
+                    ) : (
+                      <span
+                        className="font-display text-sm font-semibold transition-opacity duration-300"
+                        style={{ color: accent }}
+                      >
+                        {name}
+                      </span>
+                    )}
+                  </GlassCard>
+                </TiltCard>
               </StaggerItem>
             );
           })}

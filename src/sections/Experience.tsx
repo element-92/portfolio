@@ -4,6 +4,7 @@ import { useState } from "react";
 import { experience } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
+import { TiltCard } from "@/components/TiltCard";
 import { Chip } from "@/components/Chip";
 import { cn } from "@/utils/cn";
 
@@ -34,7 +35,7 @@ export function Experience() {
                 aria-hidden
               />
 
-              <div className="glass glow-border rounded-2xl p-6 backdrop-blur-lg sm:p-7">
+              <TiltCard className="glass glow-border rounded-2xl p-6 backdrop-blur-lg sm:p-7">
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -94,7 +95,7 @@ export function Experience() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </TiltCard>
             </Reveal>
           );
         })}

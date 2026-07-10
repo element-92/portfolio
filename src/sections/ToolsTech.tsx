@@ -4,6 +4,7 @@ import { tools } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 import { GlassCard } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 
 const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
   JavaScript: SiJavascript,
@@ -29,10 +30,12 @@ export function ToolsTech() {
           const Icon = iconMap[tool];
           return (
             <StaggerItem key={tool}>
-              <GlassCard className="flex flex-col items-center gap-3 py-8 text-center">
-                {Icon && <Icon size={28} />}
-                <span className="text-sm font-medium text-text">{tool}</span>
-              </GlassCard>
+              <TiltCard className="h-full">
+                <GlassCard className="flex h-full flex-col items-center gap-3 py-8 text-center">
+                  {Icon && <Icon size={28} />}
+                  <span className="text-sm font-medium text-text">{tool}</span>
+                </GlassCard>
+              </TiltCard>
             </StaggerItem>
           );
         })}

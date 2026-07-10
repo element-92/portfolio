@@ -18,6 +18,7 @@ import {
 import { skills } from "@/data/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GlassCard } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 
 const skillIcons: Record<string, LucideIcon> = {
@@ -53,12 +54,14 @@ export function Skills() {
           const Icon = skillIcons[skill];
           return (
             <StaggerItem key={skill}>
-              <GlassCard className="group flex h-full flex-col items-center gap-3 p-5 text-center">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-accent/15 group-hover:text-accent">
-                  {Icon && <Icon size={20} />}
-                </span>
-                <span className="text-sm font-medium text-text">{skill}</span>
-              </GlassCard>
+              <TiltCard className="h-full">
+                <GlassCard className="group flex h-full flex-col items-center gap-3 p-5 text-center">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-accent/15 group-hover:text-accent">
+                    {Icon && <Icon size={20} />}
+                  </span>
+                  <span className="text-sm font-medium text-text">{skill}</span>
+                </GlassCard>
+              </TiltCard>
             </StaggerItem>
           );
         })}

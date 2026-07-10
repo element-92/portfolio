@@ -13,6 +13,7 @@ import type { ResearchEntry } from "@/types/resume";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StaggerGroup, StaggerItem } from "@/components/Reveal";
 import { GlassCard } from "@/components/GlassCard";
+import { TiltCard } from "@/components/TiltCard";
 
 const researchIcons: Record<string, LucideIcon> = {
   "SSL/TLS Certificate Reconnaissance": FileKey,
@@ -37,22 +38,26 @@ function InsightCard({
   const Icon = icons[entry.title];
 
   return (
-    <GlassCard className="flex h-full flex-col gap-3 p-5">
-      <div className="flex items-center justify-between gap-2">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-          {Icon && <Icon size={18} />}
-        </span>
-        {entry.ongoing && (
-          <span className="rounded-full bg-secondary/15 px-2.5 py-0.5 font-mono text-[10px] tracking-wide text-secondary uppercase">
-            Ongoing
+    <TiltCard className="h-full">
+      <GlassCard className="flex h-full flex-col gap-3 p-5">
+        <div className="flex items-center justify-between gap-2">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+            {Icon && <Icon size={18} />}
           </span>
-        )}
-      </div>
-      <h4 className="font-display text-base font-semibold text-text">
-        {entry.title}
-      </h4>
-      <p className="text-sm leading-relaxed text-muted">{entry.description}</p>
-    </GlassCard>
+          {entry.ongoing && (
+            <span className="rounded-full bg-secondary/15 px-2.5 py-0.5 font-mono text-[10px] tracking-wide text-secondary uppercase">
+              Ongoing
+            </span>
+          )}
+        </div>
+        <h4 className="font-display text-base font-semibold text-text">
+          {entry.title}
+        </h4>
+        <p className="text-sm leading-relaxed text-muted">
+          {entry.description}
+        </p>
+      </GlassCard>
+    </TiltCard>
   );
 }
 
