@@ -209,6 +209,7 @@ export const recognition = {
   ],
   honor: "Top 15 Researcher · NCIIPC India (2021)",
   hallOfFame: [
+    "NASA",
     "Nokia",
     "Oracle",
     "Siemens",
@@ -223,7 +224,7 @@ export const recognition = {
     "Daimler AG",
     "Audi",
   ],
-  hallOfFameNote: "and 12+ more organizations worldwide",
+  hallOfFameNote: "and 11+ more organizations worldwide",
 };
 
 export const credentials: CredentialEntry[] = [

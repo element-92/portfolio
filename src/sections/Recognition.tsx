@@ -4,6 +4,7 @@ import {
   SiBmw,
   SiHuawei,
   SiLenovo,
+  SiNasa,
   SiNokia,
   SiSiemens,
 } from "react-icons/si";
@@ -16,6 +17,7 @@ import { TiltCard } from "@/components/TiltCard";
 import { Chip } from "@/components/Chip";
 
 const hallOfFameLogos: Record<string, IconType> = {
+  NASA: SiNasa,
   Nokia: SiNokia,
   Siemens: SiSiemens,
   Lenovo: SiLenovo,
