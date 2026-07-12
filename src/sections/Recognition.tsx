@@ -46,12 +46,12 @@ export function Recognition() {
       <SectionHeading
         eyebrow="Recognition & Responsible Disclosure"
         title={`Rewarded by ${recognition.stats[0].value} organizations, worldwide.`}
-        description="Independent vulnerability research, disclosed responsibly and acknowledged through official Hall of Fame programs."
+        description="Independent vulnerability research, disclosed responsibly and acknowledged through official recognition and rewards programs."
       />
 
       <div className="mt-10">
         <h3 className="font-mono text-xs tracking-[0.15em] text-muted uppercase">
-          Hall of Fame
+          Recognition and Rewards
         </h3>
         <StaggerGroup
           className="mt-5 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-7"
