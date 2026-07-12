@@ -4,7 +4,6 @@ import {
   SiBmw,
   SiHuawei,
   SiLenovo,
-  SiNasa,
   SiNokia,
   SiSiemens,
 } from "react-icons/si";
@@ -17,7 +16,6 @@ import { TiltCard } from "@/components/TiltCard";
 import { Chip } from "@/components/Chip";
 
 const hallOfFameLogos: Record<string, IconType> = {
-  NASA: SiNasa,
   Nokia: SiNokia,
   Siemens: SiSiemens,
   Lenovo: SiLenovo,
@@ -28,8 +26,12 @@ const hallOfFameLogos: Record<string, IconType> = {
 };
 
 // Approximate public brand accent colors, used only for a stylized text
-// treatment, not a reproduction of any company's logo artwork.
+// treatment, not a reproduction of any company's logo artwork. NASA is
+// here (not in hallOfFameLogos) because Simple Icons only offers the
+// 1975 "worm" wordmark, which reads as illegible abstract shapes at
+// this size rather than the widely recognized circular insignia.
 const hallOfFameAccents: Record<string, string> = {
+  NASA: "#FC3D21",
   Oracle: "#C74634",
   SANS: "#06BCCD",
   Takealot: "#0071CE",
