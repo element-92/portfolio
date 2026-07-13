@@ -51,7 +51,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mx-auto mt-6 max-w-xl text-balance text-base leading-relaxed text-muted"
         >
-          {profile.tagline}. 5+ years turning attack surface into actionable
+          {profile.tagline}. 7+ years turning attack surface into actionable
           risk, recognized by 50+ organizations worldwide.
         </motion.p>
 

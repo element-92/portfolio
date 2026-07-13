@@ -16,17 +16,17 @@ export const profile = {
   github: "https://github.com/element-92",
   resumeFile: "harshal-sharma-resume.pdf",
   summary:
-    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud Security, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real world security risks. Leading end to end ASM delivery, has responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, and actively contributes to product enhancement through automation, custom tooling, and new detection capabilities.",
+    "Offensive Security Professional with 7+ years of experience specializing in Web, API, Cloud Security, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments, Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), OSINT, and Threat Modeling to identify and mitigate real world security risks. Leading end to end ASM delivery, has responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, and actively contributes to product enhancement through automation, custom tooling, and new detection capabilities.",
 };
 
 export const about = {
   paragraphs: [
-    "Offensive Security Professional with 5+ years of experience specializing in Web, API, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments through Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), Software Composition Analysis (SCA), Open Source Intelligence (OSINT), Static and Dynamic Application Security Testing (SAST & DAST), and Threat Modeling to identify and mitigate real world security risks. Experienced in Security Automation and AI & Agentic Workflow Automation, developing scalable tools and workflows that improve security operations and assessment efficiency. Responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, while combining technical expertise with strong management and leadership skills to deliver impactful security outcomes.",
+    "Offensive Security Professional with 7+ years of experience specializing in Web, API, Cloud, AI/LLM, and Network Penetration Testing. Skilled in delivering comprehensive security assessments through Vulnerability Assessment & Penetration Testing (VAPT), Attack Surface Management (ASM), Software Composition Analysis (SCA), Open Source Intelligence (OSINT), Static and Dynamic Application Security Testing (SAST & DAST), and Threat Modeling to identify and mitigate real world security risks. Experienced in Security Automation and AI & Agentic Workflow Automation, developing scalable tools and workflows that improve security operations and assessment efficiency. Responsibly disclosed vulnerabilities to 50+ organizations worldwide, including several leading technology companies, while combining technical expertise with strong management and leadership skills to deliver impactful security outcomes.",
   ],
 };
 
 export const stats: StatEntry[] = [
-  { value: "5+", label: "Years in Offensive Security" },
+  { value: "7+", label: "Years in Offensive Security" },
   { value: "50+", label: "Companies Rewarded" },
   { value: "25+", label: "Halls of Fame" },
 ];
